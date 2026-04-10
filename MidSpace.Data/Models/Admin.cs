@@ -11,9 +11,9 @@ namespace MidSpace.Data.Models
     internal class Admin
     {
         [Key, ForeignKey("User")]
-        public int AdminId { get; set; } // هو نفسه الـ UserID
+        public int AdminId { get; set; } 
 
-        public string Role { get; set; } // هل هو SuperAdmin ولا Manager؟
+        public string Role { get; set; } 
 
         public virtual User User { get; set; }
     }
